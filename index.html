@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="https://unpkg.com/boxicons@2.1.4/svg/regular/bx-home-alt-2.svg" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Marci Metzger Homes | Real Estate Agent</title>
+</head>
+
+<body class="">
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="" class="nav__logo" id="header-logo"><img id="logo-img" src="assets\img\marci-metzger-transparent-header-logo.png" alt=""></a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#listings" class="nav__link">
+                            <span>Listings</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#letsmove" class="nav__link">
+                            <span>Let's Move</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <span>About Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main class="main">
+        <section id="home-slider">
+            <div class="carousel" data-carousel>
+            <ul data-slides>
+                <li class="slide" data-active>
+                <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-50.jpg-SMALL.JPG/:/rs=w:984,h:655" alt="Nature Image #1">
+                </li>
+                <li class="slide">
+                <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-53.jpg-SMALL.JPG/:/rs=w:984,h:656" alt="Nature Image #2">
+                </li>
+                <li class="slide">
+                <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-41.jpg-SMALL.JPG/:/rs=w:984,h:656" alt="Nature Image #3">
+                </li>
+            </ul>
+            </div>
+            <div class="overlay">
+                <section class="home section" id="home">       
+            <div class="home__container container grid">
+                <div class="home_data">
+                    <h1 class="home__title">
+                        Discover Most Suitable Properties
+                    </h1>
+                    <p class="home__description">
+                        Find a variety of properties that suit you very easily, forget all difficulties in finding a
+                        residence for you
+                    </p>
+                </div>
+            </div>
+            <div class="search-box">
+                <div class="search-tab">Rentals</div>    <div class="search-container">
+                    <div class="search-field">
+                        <label>Category</label>
+                        <select>
+                            <option>Select Category</option>
+                            <option>Apartment</option>
+                            <option>Villa</option>
+                        </select>
+                        </div>
+
+                        <div class="search-field">
+                        <label>Property Location</label>
+                        <input type="text" placeholder="Enter an address, state, city, area or zip code" />
+                        </div>
+
+                        <div class="search-field">
+                        <label>Bedrooms</label>
+                        <select>
+                            <option>Select Bedrooms</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3+</option>
+                        </select>
+                        </div>
+
+                        <div class="search-field">
+                        <label>Bathrooms</label>
+                        <select>
+                            <option>Select Bathrooms</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3+</option>
+                        </select>
+                        </div>
+
+                        <button class="search-btn">
+                            <i class='bx bx-search'></i></button>
+                    </div>
+                    </div>
+        </section>
+            </div>
+        </section>
+        
+        <section class="popular section" id="popular">
+            <div class="container">
+                <span class="section__subtitle">
+                    Best Choice
+                </span>
+                <h2 class="section__title">
+                    See yourself <span>here.</span>
+                </h2>
+                <div class="gallery">
+                    <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4460%20Roseworthy-52.jpg-SMALL.JPG" alt="img1">
+                    <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-45.jpg-SMALL.JPG" alt="img2">
+                    <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-54.jpg-SMALL.JPG" alt="img3">
+                    <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-41.jpg-SMALL.JPG" alt="img4">
+                    <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-50.jpg-SMALL.JPG" alt="img5">
+                    <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-14.jpg-SMALL.JPG" alt="img6">
+                    
+                </div>
+
+                <div class="lightbox" id="lightbox">
+                    <img src="" alt="lightbox image">
+                </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <section class="value section" id="about">
+            <div class="value__container container grid">
+                <div class="value__images">
+                        <div class="value__img">
+                            <img src="https://img1.wsimg.com/isteam/stock/kayaJdA" alt="">
+                        </div>
+                </div>
+
+                <div class="value__content">
+                    <div class="value__data">
+                        <h2 class="section__title">Our <span>Services</span></h2>
+                        <p class="value__description">
+                            We helped nearly 90 clients in 2021, and closed 28.5 million in sales! 
+                            Our team works hard everyday to grow and learn, so that we may continue to excel in our market. Our clients deserve our best, & we want to make sure our best is better every year.
+                        </p>
+                    </div>
+
+                    <div class="value__accordion">
+
+                        <div class="value__accordion-item">
+                            <header class="value__accordion-header">
+                                <i class='bx bx-home value__accordion-icon'></i>
+                                <h3 class="value__accordion-title">
+                                    Real Estate Done Right
+                                </h3>
+                                <div class="value__accordion-arrow">
+                                    <i class='bx bxs-down-arrow'></i>
+                                </div>
+                            </header>
+
+                            <div class="value__accordion-content">
+                                <p class="value__accordion-description">
+                                    Nervous about your property adventure? Don’t be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="value__accordion-item">
+                            <header class="value__accordion-header">
+                                <i class='bx bx-building value__accordion-icon'></i>
+                                <h3 class="value__accordion-title">
+                                    Commercial & Residential
+                                </h3>
+                                <div class="value__accordion-arrow">
+                                    <i class='bx bxs-down-arrow'></i>
+                                </div>
+                            </header>
+
+                            <div class="value__accordion-content">
+                                <p class="value__accordion-description">
+                                    Large or small, condo or mansion, we can find it and get at the price that's right. Fixer-uppers? Luxury? We can help with all of it! We live, work, and play in this community. Happy to help you find where to put you hard-earned dollars.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="value__accordion-item">
+                            <header class="value__accordion-header">
+                                <i class='bx bx-badge-check value__accordion-icon'></i>
+                                <h3 class="value__accordion-title">
+                                    Rely on Expertise
+                                </h3>
+                                <div class="value__accordion-arrow">
+                                    <i class='bx bxs-down-arrow'></i>
+                                </div>
+                            </header>
+
+                            <div class="value__accordion-content">
+                                <p class="value__accordion-description">
+                                    If you have questions about affordability, credit, and loan options, trust us to connect you with the right people to get the answers you need in a timely fashion. We make sure you feel confident and educated every step of the way.
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="value section" id="value">
+            <div class="value__container container grid">
+                <div class="value__content">
+                    <div class="value__data">
+                        <span class="section__subtitle">Realtor for Nearly 3 Decades</span>
+                        <h2 class="section__title">Pahrump <span>Realtor</span></h2>
+                        <p class="value__description">
+                            Marci was a REALTOR, then licensed Broker, in Washington State. Now, she is enjoying the sunshine, and helping clients in Southern Nevada. Having helped buyers and sellers in many markets since 1995, she is a wealth of knowledge.
+                        </p>
+
+                        <p class="quote">
+                            "I love that small-town feeling that our community offers. Spectacular golf courses, parks, pool, and easy access to Las Vegas make Pahrump a great place to call home. Working or retired, fast-paced or looking to relax... there's a place for you here!
+                            I enjoy living in the Mountain Falls community and will strive to find you a home that will suit you just as this community does me."
+                        </p>
+                    </div>
+                    
+                     <div class="contact__card">
+                        <div class="contact__card-box">
+                            <div class="contact__card-info"> <a href="tel:206-919-6886">
+                                <i class='bx bxs-phone-incoming'></i>
+                                <div>
+                                    <h3 class="contact__card-title">
+                                        Call Now
+                                    </h3>
+
+                                    <p class="contact__card-description">
+                                        206-919-6886
+                                    </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="value__images">
+                        <div class="value__img">
+                            <img src="assets/img/marci-metzger.png" alt="">
+                        </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="contact__container container grid">
+                <div class="map">
+                        <iframe width="500" height="500" src="https://www.openstreetmap.org/export/embed.html?bbox=-115.97045660018922%2C36.17926092857145%2C-115.94303369522096%2C36.191228186789836&amp;layer=mapnik" style="border: 1px solid black"></iframe>
+                </div>
+
+                <div class="contact__content">
+                    <div class="contact__data">
+                        <span class="section__subtitle">Contact Us</span>
+                        <h2 class="section__title">
+                            Get in <span>Touch</span>
+                        </h2>
+                        <p class="contact__description">
+                            Get in touch with our sales team for further information and we will keep you updated with the latest news.
+                        </p>
+
+                         <form class="contact__form">
+                            <div class="contact__field">
+                                <input type="text" id="name" placeholder="Your name" required>
+                            </div>
+
+                            <div class="contact__field">
+                                <input type="email" id="email" placeholder="Your email" required>
+                            </div>
+
+                            <div class="contact__field">
+                                <textarea id="message" rows="4" placeholder="Your message" required></textarea>
+                            </div>
+
+                            <button type="submit" class="button">Send Message</button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <section class="logos section">
+                <div class="logos__container container grid">
+                    <div class="logos__img">
+                        <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/BIG%20CIRCLE%202.png/:/rs=w:120,h:120,cg:true,m/cr=w:120,h:120" alt="">
+                    </div>
+                    <div class="logos__img">
+                        <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/Equal%20Housing%20Logo.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:100,h:100,cg:true" alt="">
+                    </div>
+                    <div class="logos__img">
+                        <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/Realtor%20Pin.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:100,h:100,cg:true" alt="">
+                    </div>
+                    <div class="logos__img">
+                        <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/Chamber.jpg/:/rs=w:100,h:100,cg:true,m/cr=w:100,h:100" alt="">
+                    </div>
+                </div>
+            </section>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container">
+            <!-- <div class="links__intro">
+                <a href="" class="footer__logo">
+                    <i class='bx bxs-building-house bx-flashing' ></i>
+                </a>
+                <p class="footer__description">
+                    Stay in touch
+                </p>
+            </div> -->
+
+            <div class="footer__content">
+
+                <div>
+                    <h3 class="footer__title">
+                        About US
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link popup-enabled">About Company</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link popup-enabled">Our Story</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link popup-enabled">Testimonials</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">
+                        Listings
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link popup-enabled">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link popup-enabled">Condominium</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__link popup-enabled">Townhouse</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__link popup-enabled">Apartment</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__link popup-enabled">View All</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">
+                        Let's Move
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="" class="footer__link popup-enabled">Book an appointment</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__link popup-enabled">Partnerships</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="social">
+            <h3 class="footer__title">
+                Follow us
+            </h3>
+
+            <ul class="footer__social">
+                <a href="https://www.yelp.com/biz/xr3yQN_m2SgO0R_7S6p62w" class="footer__social-link popup-enabled" target="_blank">
+                    <i class='bx bxl-yelp'></i>
+                </a>
+                <a href="https://www.facebook.com/MarciHomes/" class="footer__social-link popup-enabled" target="_blank">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/marci-metzger-30642496/" class="footer__social-link popup-enabled" target="_blank">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://www.instagram.com/marciandlauren_nvrealtors/" class="footer__social-link popup-enabled" target="_blank">
+                    <i class='bx bxl-instagram-alt'></i>
+                </a>
+            </ul>
+        </div>
+
+        <div class="footer__info container">
+            <span class="footer__copy">
+                Marci Metzger Homes
+            </span>
+
+            <div class="footer__privacy">
+                <a href="#" class='popup-enabled'>Terms & conditions</a>
+                <a href="#" class='popup-enabled'>Privacy Policy</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <a href="" class="scrollup" id="scroll-up">
+        <i class='bx bxs-chevrons-up'></i>
+    </a>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
